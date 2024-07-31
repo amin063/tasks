@@ -1,24 +1,43 @@
-body{
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-main{
-    width: 70%;
+
+:root {
+    --main-color: #f0fff8;
+    --second-color: #80ced6;
+}
+
+main {
     margin: auto;
+    width: 65%;
 }
-table {
-    border-collapse: collapse;
-    background-color: #f0fff8;
-  }
-table tr td{
-    padding: 10px;
-    border: 1px solid #80ced6;;
-}
-.container{
-    padding: 10px;
-    background-color: #f0fff8;
-    border: 1px solid #80ced6;
-    border-radius: 5px;
-}
-h1,h3{
+
+h1, h3 {
     font-weight: 900;
+}
+section{
+    margin: 20px 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--main-color);
+
+}
+
+table tr td {
+    border: 1px solid var(--second-color);
+    padding: 10px;
+}
+
+.container {
+    padding: 30px;
+    margin: 20px 0px;
+    background-color: var(--main-color);
+    border: 1px solid var(--second-color);
+    border-radius: 10px;
 }
