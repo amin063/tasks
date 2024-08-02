@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+a{
+    color: white;
+}
+
+header {
+    background-color: #59316b;
+    padding-bottom: 150px;
+}
+
+.download-section {
+    
+    text-align: center;
+    color: white;
+}
+
+.download-section h1, h2 {
+    font-weight: 300;
+}
+.download-section h1 {
+    font-size: 85px;
+}
+.download-section h2 {
+    font-size: 30px;
+}
+
+.download-boxes {
+    margin-left: 100px;
+    display: flex;
+}
+
+.download-box {
+    margin: 50px;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    background-color: #401753;
+    border-radius: 100%;
+    font-size: 85px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7d4698;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #401753;
+    transition: all 0.5s;
+}
+.signature{
+    text-align: start;
+}
+.signature a {
+    margin-right: 5px;
+}
+
+.signature i {
+    font-size: 10px;
+}
+.download-links{
+    width: 100%;
+}
+.download-links a{
+    margin: 0px 100px;
+}
