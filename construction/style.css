@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #fab700;
+    color: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    color: #777777;
+    font-size: 14px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1140px;
+    margin-inline: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: calc(100%/3);
+    padding: 20px;
+}
+
+.item {
+    background-color: #f9f9ff;
+    padding: 40px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #fab700;
+    transition: 0.5s;
+}
+
+.item i {
+    margin: 0px 10px 30px 0px;
+}
+
+.item h4 {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 970px) and (min-width:845px) {
+    .col-4 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .col-4 {
+        width: 100%;
+    }
+}
