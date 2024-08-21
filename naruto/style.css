@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    height: 300px;
+}
+
+
+.naruto {
+    height: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all ease-in .7s;
+    position: relative;
+    background-color: #96ff0d;
+
+    &:hover {
+        transition: all ease-in .7s;
+        background-color: black;
+    }
+
+    .naruto-1 {
+        transition: all ease-in .7s;
+        transform: translateY(0);
+    }
+
+    .naruto-2 {
+        transition: all ease-in .7s;
+    }
+
+    &:hover .naruto-1 {
+        transition: all ease-in .7s;
+        transform: translateY(-300px);
+        scale: 0.5;
+    }
+
+    &:hover .naruto-2 {
+        transition: all ease-in .7s;
+        transform: translateY(-304px);
+    }
+
+
+
+}
+
+.green-box {
+    width: 25px;
+    height: 25px;
+    background-color: #96ff0d;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation-name: green-box;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.red-box {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation-name: red-box;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes green-box {
+    0% {
+        top: 10px;
+        left: 10px;
+    }
+
+    25% {
+        top: 10px;
+        left: calc(100% - 40px);
+        border-radius: 10px;
+    }
+
+    50% {
+        top: calc(100% - 40px);
+        left: calc(100% - 40px);
+        border-radius: 100%;
+
+    }
+
+    75% {
+        top: calc(100% - 40px);
+        left: 10px;
+        border-radius: 100%;
+    }
+
+    100% {
+        top: 10px;
+        left: 10px;
+        
+    }
+}
+
+@keyframes red-box {
+    0% {
+        top: 10px;
+        left: 10px;
+    }
+
+    25% {
+        top: calc(100% - 40px);
+        left: 10px;
+    }
+
+    50% {
+        top: calc(100% - 40px);
+        left: calc(100% - 40px);
+    }
+
+    75% {
+        top: 10px;
+        left: calc(100% - 40px);
+    }
+
+    100% {
+        top: 10px;
+        left: 10px;
+    }
+}
