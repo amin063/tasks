@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a9ac9;
+}
+
+.container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    width: 60%;
+    background-color: white;
+    margin-inline: auto;
+    position: relative;
+    background-color: transparent;
+    height: 80%;
+}
+
+.item {
+    border: 1px solid white;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    position: absolute;
+    width: 33%;
+    animation-fill-mode: forwards;
+}
+
+.item:nth-child(1) {
+    animation-name: item1;
+    top: 0;
+    left: 33%;
+}
+
+.item:nth-child(2) {
+    animation-name: item2;
+    left: 33%;
+    top: 66%;
+}
+
+.item:nth-child(3) {
+    animation-name: item3;
+    top: 33%;
+    left: 66%;
+}
+
+.item:nth-child(4) {
+    animation-name: item4;
+    top: 66%;
+}
+
+.item:nth-child(5) {
+    animation-name: item5;
+    top: 0%;
+    left: 0%;
+}
+
+.item:nth-child(6) {
+    animation-name: item6;
+    top: 0%;
+    left: 66%;
+
+}
+
+.item:nth-child(7) {
+    animation-name: item7;
+    top: 33%;
+}
+
+.item:nth-child(8) {
+    animation-name: item8;
+    top: 66%;
+    left: 66%;
+}
+
+.item:nth-child(9) {
+    animation-name: item9;
+    top: 33%;
+    left: 33%;
+}
+
+
+@keyframes item1 {
+    to {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@keyframes item2 {
+    0% {
+        left: 33%;
+        top: 66%;
+    }
+
+    50% {
+        left: 33%;
+        top: 33%;
+    }
+
+    100% {
+        left: 33%;
+        top: 0%;
+    }
+}
+
+@keyframes item3 {
+    to {
+        top: 0%;
+        left: 66%;
+    }
+}
+
+@keyframes item4 {
+    to {
+        top: 33%;
+        left: 0%;
+    }
+}
+
+
+@keyframes item5 {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    50% {
+        top: 0%;
+        left: 33%;
+    }
+
+    100% {
+        top: 33%;
+        left: 33%;
+    }
+
+}
+
+@keyframes item6 {
+    to {
+        top: 33%;
+        left: 66%;
+    }
+}
+
+@keyframes item7 {
+    to {
+        top: 66%;
+        left: 0%;
+    }
+}
+
+@keyframes item8 {
+    to {
+        top: 66%;
+        left: 33%;
+    }
+}
+
+@keyframes item9 {
+    0% {
+        top: 33%;
+        left: 33%;
+    }
+
+    50% {
+        top: 66%;
+        left: 33%;
+    }
+
+    100% {
+        top: 66%;
+        left: 66%;
+    }
+}
