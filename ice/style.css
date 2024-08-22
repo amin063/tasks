@@ -20,9 +20,6 @@ body {
 }
 
 .container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
     width: 60%;
     background-color: white;
     margin-inline: auto;
@@ -37,6 +34,7 @@ body {
     animation-duration: 2s;
     position: absolute;
     width: 33%;
+    height: 33%;
     animation-fill-mode: forwards;
 }
 
