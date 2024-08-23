@@ -15,7 +15,7 @@ p {
     font-size: 50px;
     text-align: center;
     visibility: hidden;
-    animation: talk 80s infinite;
+    animation: talk 50s infinite;
 }
 
 img {
@@ -23,44 +23,40 @@ img {
     transform: translate(0px, 0px);
     cursor: pointer;
     animation-name: walk;
-    animation-duration: 70s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
 }
 
 @keyframes walk {
     0% {
-        transform: translate(0px, 0px);
+        transform: translate(0px, 0px) rotateY(0deg) scale(0);
     }
 
-    40% {
-        scale: 5;
-        transform: translate(122px, 82px) rotateY(0deg) rotateZ(0deg);
-
-        h1 {
-            visibility: visible;
-        }
+    25%{
+        
+        transform: translate(600px, 400px) rotateY(0deg) scale(5);
+    }
+    50% {
+        transform: translate(600px, 400px) rotateY(180deg) scale(5);
     }
 
-    41% {
-        animation-duration: 0.1s;
-        transform: translate(122px, 82px) rotateY(180deg);
-        visibility: visible;
+    50.1% {
+        transform: translate(600px, 400px) rotateY(180deg) scale(5);
     }
 
     100% {
-        transform: translate(0px, 0px) rotateY(180deg);
-        scale: 1;
+        transform: translate(0px, 0px) rotateY(180deg) scale(1);
     }
 }
 
 @keyframes talk {
 
     0%,
-    30% {
+    20% {
         visibility: hidden;
     }
 
-    31% {
+    23% {
         visibility: visible;
     }
     34% {
