@@ -11,19 +11,25 @@ body {
     height: 100vh;
 }
 
-p {
-    font-size: 50px;
-    text-align: center;
-    visibility: hidden;
-    animation: talk 50s infinite;
+img {
+    width: 100%;
+    height: 100%;
 }
 
-img {
+p {
+    text-align: center;
+    visibility: hidden;
+    animation: talk 15s infinite;
+}
+
+.container {
+    display: flex;
     width: 50px;
+    height: 50px;
     transform: translate(0px, 0px);
     cursor: pointer;
     animation-name: walk;
-    animation-duration: 50s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
@@ -32,34 +38,34 @@ img {
         transform: translate(0px, 0px) rotateY(0deg) scale(1);
     }
 
-    25%{
-        
+    47.5%{
         transform: translate(600px, 400px) rotateY(0deg) scale(5);
     }
-    50% {
+    47.51% {
         transform: translate(600px, 400px) rotateY(180deg) scale(5);
     }
 
-    50.1% {
+    52.5% {
         transform: translate(600px, 400px) rotateY(180deg) scale(5);
     }
 
     100% {
         transform: translate(0px, 0px) rotateY(180deg) scale(1);
     }
+
 }
 
 @keyframes talk {
 
     0%,
-    20% {
+    40% {
         visibility: hidden;
     }
 
-    23% {
+    41% {
         visibility: visible;
     }
-    34% {
+    46% {
         visibility: hidden;
     }
 }
