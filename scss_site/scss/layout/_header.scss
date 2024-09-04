@@ -1,0 +1,59 @@
+@import "../abstracts/index";
+@import "../components/index";
+
+header {
+    background-image: url("https://preview.colorlib.com/theme/rezume/images/image_1.jpg.webp");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    &:after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .main-menu {
+        @extend .menu;
+        position: absolute;
+        padding: 50px;
+        left: 50%;
+        right: 50%;
+        color: $primaryLight;
+        z-index: 99;
+    }
+    a {
+        font-size: $p2s;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    .intro {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: $primaryLight;
+        z-index: 2;
+
+        h1 {
+            font-size: $h1s;
+            font-weight: $fw4;
+
+            span {
+                font-weight: $fw1;
+            }
+            p {
+                font-size: $p1s;
+                text-transform: uppercase;
+                color: $secondaryLight;
+            }
+        }
+    }
+}

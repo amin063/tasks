@@ -1,0 +1,37 @@
+@import "../components/index";
+@import "../abstracts/index";
+
+#services {
+    color: white;
+    text-align: center;
+
+    .services-caption {
+        @extend .semi-bold;
+    }
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $secondaryDark;
+        padding: 25px;
+        gap: 20px;
+    }
+    .service-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: $secondaryDark;
+        background-color: $txtGreen;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    .service-info {
+        color: $secondaryLight;
+    }
+    .more {
+        color: $txtGreen;
+    }
+}

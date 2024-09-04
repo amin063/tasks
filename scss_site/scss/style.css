@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #222;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.menu, header .main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span {
+  font-weight: 800;
+}
+
+header {
+  background-image: url("https://preview.colorlib.com/theme/rezume/images/image_1.jpg.webp");
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+
+header:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+header .main-menu {
+  position: absolute;
+  padding: 50px;
+  left: 50%;
+  right: 50%;
+  color: #fff;
+  z-index: 99;
+}
+
+header a {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+header .intro {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+header .intro h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
+
+header .intro h1 span {
+  font-weight: 800;
+}
+
+header .intro h1 p {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  max-width: 1140px;
+}
+
+.menu, #portfolio .portfolio-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold, #portfolio .portfolio-caption {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2, #portfolio .portfolio-caption h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span, #portfolio .portfolio-caption h2 span {
+  font-weight: 800;
+}
+
+#portfolio {
+  text-align: center;
+  color: white;
+}
+
+#portfolio .portfolio-menu a {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#portfolio .portfolio-menu a:hover {
+  color: #bac964;
+}
+
+#portfolio .item h3 {
+  font-size: 20px;
+}
+
+#portfolio .item p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold, #resume .resume-caption {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2, #resume .resume-caption h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span, #resume .resume-caption h2 span {
+  font-weight: 800;
+}
+
+#resume {
+  color: white;
+}
+
+#resume .resume-caption {
+  text-align: center;
+}
+
+#resume .box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: #333;
+  padding: 15px;
+}
+
+#resume .box .box-date {
+  font-size: 12px;
+}
+
+#resume .box h4 {
+  color: #bac964;
+}
+
+#resume .box .box-info, #resume .box .box-end {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold, #about .about .about-caption {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2, #about .about .about-caption h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span, #about .about .about-caption h2 span {
+  font-weight: 800;
+}
+
+#about {
+  color: white;
+}
+
+#about .about {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#about .about .about-title {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.5;
+  width: 85%;
+}
+
+#about .about .about-info {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.5;
+  width: 85%;
+}
+
+#about .about .contact-btns .hire {
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  background-color: #bac964;
+  color: white;
+  border-radius: 100px;
+  border: none;
+}
+
+#about .about .contact-btns .cv {
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  border-radius: 100px;
+  border: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold, #client .client-caption {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2, #client .client-caption h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span, #client .client-caption h2 span {
+  font-weight: 800;
+}
+
+#client {
+  color: white;
+}
+
+#client .client-caption {
+  text-align: center;
+}
+
+#client .client {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+#client .client img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+#client .client .comment-box {
+  color: rgba(255, 255, 255, 0.4);
+  padding: 25px 15px;
+  background-color: #333;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold, #services .services-caption {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2, #services .services-caption h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span, #services .services-caption h2 span {
+  font-weight: 800;
+}
+
+#services {
+  color: white;
+  text-align: center;
+}
+
+#services .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  padding: 25px;
+  gap: 20px;
+}
+
+#services .service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #333;
+  background-color: #bac964;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+#services .service-info {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#services .more {
+  color: #bac964;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold, #blog .blog-caption {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2, #blog .blog-caption h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span, #blog .blog-caption h2 span {
+  font-weight: 800;
+}
+
+#blog {
+  color: white;
+}
+
+#blog .card {
+  background-color: #333;
+}
+
+#blog .card-title {
+  color: white;
+}
+
+#blog .card-text {
+  color: rgba(255, 255, 255, 0.4);
+}/*# sourceMappingURL=style.css.map */

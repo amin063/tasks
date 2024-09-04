@@ -1,0 +1,40 @@
+@import "../components/index";
+@import "../abstracts/index";
+
+#about {
+    color: white;
+    .about {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        .about-caption {
+            @extend .semi-bold
+        }
+        .about-title {
+            font-size: $h4s;
+            color: $secondaryLight;
+            line-height: 1.5;
+            width: 85%;
+        }
+        .about-info {
+            font-size: $p1s;
+            color: $secondaryLight;
+            line-height: 1.5;
+            width: 85%;
+        }
+        .contact-btns{
+            .hire {
+                @include btn(0.5rem, 1.5rem, $txtGreen, white);
+            }
+            .cv {
+                @include btn(0.5rem, 1.5rem, $secondaryLight, white);
+
+            }
+
+        }
+    }
+    
+
+
+}

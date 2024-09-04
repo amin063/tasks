@@ -1,0 +1,28 @@
+@import "../components/index";
+@import "../abstracts/index";
+
+#portfolio {
+    text-align: center;
+    color: white;
+    .portfolio-caption {
+        @extend .semi-bold;
+    }
+    .portfolio-menu {
+        @extend .menu;
+        a {
+            color: $secondaryLight;
+        }
+        a:hover {
+            color: $txtGreen;
+        }
+    }
+    .item {
+        h3 {
+            font-size: $h4s;
+        }
+        p {
+            font-size: $p3s;
+            color: $secondaryLight;
+        }
+    }
+}

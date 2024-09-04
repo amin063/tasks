@@ -1,0 +1,19 @@
+@import "../components/index";
+@import "../abstracts/index";
+
+#blog {
+    color: white;
+    .blog-caption {
+        @extend .semi-bold;
+    }
+    .card { 
+        background-color: $secondaryDark;
+        
+        &-title { 
+            color: white;
+        }
+        &-text {
+            color: $secondaryLight
+        } 
+    }
+}

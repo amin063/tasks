@@ -1,0 +1,12 @@
+@import "../abstracts/index";
+
+.semi-bold {
+    h2 {
+        font-weight: $fw4;
+
+        span {
+            font-weight: $fw1;
+        }
+    }
+    margin-bottom: 30px;
+}

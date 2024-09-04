@@ -1,0 +1,27 @@
+@import "../components/index";
+@import "../abstracts/index";
+#resume {
+    color: white;
+    .resume-caption {
+        text-align: center;
+        @extend .semi-bold;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        background-color: $secondaryDark;
+        padding: 15px;
+
+        .box-date {
+            font-size: $p3s;
+        }
+        h4 {
+            color: $txtGreen;
+        }
+        .box-info, .box-end {
+            color: $secondaryLight;
+        }
+    }
+}
