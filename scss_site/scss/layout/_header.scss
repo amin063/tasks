@@ -21,8 +21,6 @@ header {
         @extend .menu;
         position: absolute;
         padding: 50px;
-        left: 50%;
-        right: 50%;
         color: $primaryLight;
         z-index: 99;
     }

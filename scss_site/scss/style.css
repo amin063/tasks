@@ -62,8 +62,6 @@ header:after {
 header .main-menu {
   position: absolute;
   padding: 50px;
-  left: 50%;
-  right: 50%;
   color: #fff;
   z-index: 99;
 }
@@ -104,6 +102,50 @@ header .intro h1 p {
   width: 80%;
   margin: auto;
   max-width: 1140px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span {
+  font-weight: 800;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+footer .social-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+footer .social-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #333;
+  color: #bac964;
+  border-radius: 100%;
 }
 
 .menu, #portfolio .portfolio-menu {
@@ -387,5 +429,87 @@ header .intro h1 p {
 }
 
 #blog .card-text {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.semi-bold, #contact .contact-caption {
+  margin-bottom: 30px;
+}
+
+.semi-bold h2, #contact .contact-caption h2 {
+  font-weight: 200;
+}
+
+.semi-bold h2 span, #contact .contact-caption h2 span {
+  font-weight: 800;
+}
+
+#contact {
+  color: white;
+}
+
+#contact .contact-caption {
+  text-align: center;
+}
+
+#contact h3 {
+  text-align: center;
+}
+
+#contact form {
+  gap: 25px;
+}
+
+#contact form input {
+  padding: 15px;
+  background-color: #333;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+#contact form input:focus {
+  background: #404040;
+}
+
+#contact form textarea {
+  background-color: #333;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
+#contact form .send-btn {
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  background-color: #bac964;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  width: 180px;
+}
+
+#contact .contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact .contact-details .contact-detail {
+  padding-left: 25px;
+}
+
+#contact .contact-details .contact-detail .title {
+  color: #2c3e50;
+}
+
+#contact .contact-details .contact-detail .info {
   color: rgba(255, 255, 255, 0.4);
 }/*# sourceMappingURL=style.css.map */

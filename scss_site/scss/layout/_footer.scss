@@ -1,0 +1,27 @@
+@import "../abstracts/index";
+@import "../components/index";
+
+footer {
+    text-align: center;
+    color: white;
+
+    .social-links {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #333;
+            color: $txtGreen;
+            border-radius: 100%;
+        }
+    }
+}

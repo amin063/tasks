@@ -1,0 +1,53 @@
+@import "../abstracts/index";
+@import "../components/index";
+
+
+#contact {
+    color: white;
+    .contact-caption {
+        text-align: center;
+        @extend .semi-bold;
+    }
+    h3 {
+        text-align: center;
+    }
+    form {
+        gap: 25px;
+        input { 
+            padding: 15px;
+            background-color: $secondaryDark;
+            border: none;
+            color: white;
+            outline: none;
+            &:focus {
+                background: #404040;
+            }
+        }
+        textarea {
+            background-color: $secondaryDark;
+            padding: 20px;
+            border: none;
+            outline: none;
+        }
+        .send-btn {
+            @include btn(1rem, 1.5rem, $txtGreen, white);
+            width: 180px;
+        }
+    }
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .contact-detail {
+            padding-left: 25px;
+            .title {
+                color: #2c3e50;
+            }
+            .info {
+                color: $secondaryLight;
+            }
+        }
+    }
+
+    
+}
