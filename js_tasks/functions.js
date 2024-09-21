@@ -44,7 +44,6 @@ console.log(getRubl());
 
 
 // TASK 04
-var num = prompt("Herfe daxil etmek istediyiniz reqemi daxil edin(1-99)");
 function sayFirstDigit(firstDigit) {
     switch (firstDigit) {
         case "1":
@@ -95,7 +94,7 @@ function saySecondDigit(secondDigit) {
     }
 }
 
-function sayNum() {
+function sayNum(num) {
     if (num.length === 1) {
         return saySecondDigit(num);
     } else if (num.length === 2) {
@@ -106,7 +105,7 @@ function sayNum() {
 }
 
 
-console.log(sayNum());
+console.log(sayNum("49"));
 
 // TASK 05
 
@@ -135,12 +134,61 @@ function calc(a, b, c) {
     }
 }
 
-console.log(calc(5,3,"+"));
+console.log(calc(5, 3, "+"));
 
+// TASK 07
 
+function isLucky(num) {
 
+    var firstSum = +num[0] + +num[1] + +num[2];
+    var secondSum = +num[3] + +num[4] + +num[5];
 
+    if (firstSum === secondSum) {
+        return true;
+    } else if (firstSum !== secondSum) {
+        return false;
+    }
+}
 
+console.log(isLucky("123231"));
+console.log(isLucky("456654"));
+
+//  TASK 08
+function capitalizeWords(txt) {
+    var txtList = txt.split(" ");
+    for (i = 0; i < txtList.length; i++) {
+        txtList[i] = txtList[i][0].toUpperCase() + txtList[i].slice(1);
+    }
+    return txtList.join(" ");
+}
+
+console.log(capitalizeWords("Böyüyə hörmət elə, sən də böyüyəcəksən."));
+
+// TASK 09
+function isEven(num) {
+    if (num % 2 === 0) {
+        return true;
+    } else if (num % 2 !== 0) {
+        return false;
+    }
+}
+
+console.log(isEven(6));
+
+// TASK 10
+function isValidNumber(num) {
+    if (num[0] === "+" && num[1] === "7" && num.length == 12) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(isValidNumber("+71234567890"));
+
+// TASK 11
+
+// Regex e hele baxmamisam
 
 
 
@@ -151,30 +199,6 @@ console.log(calc(5,3,"+"));
 
 /*
 
-
-
-Task-07
-Biletin şanslı olub olmadığını yoxlayan funksiya yazın.
-Altı rəqəmli ədəd qəbul edən və ilk üç rəqəminin cəminin ikinci üç rəqəminin cəminə bərabər
-olduğunu yoxlayan isLucky funksiyasını yazın.
-Bilet uğurlu olarsa, funksiya true, uğursuz olarsa, false qaytarmalıdır.
-Məsələn, isLucky(234801);  // true qaytaracaq
-
-
-((((((((((((((((((Task-08
-capitalizeWords funksiyasını yazın.
-Funksiya parametr kimi bir neçə sözdən ibarət mətn qəbul edir. 
-Funksiya geriyə eyni mətni qaytarmalıdır, lakin içindəki hər söz böyük hərflə başlamalıdır.
-Məsələn, capitalizeWords('Hello my name is Harry'); // 'Hello My Name Is Harry' qaytaracaq.))))))))))))))))))
-
-Task-09
-Bir ədədi parametr kimi qəbul edən və cüt olduqda true, 
-tək olduqda isə false qaytaran isEven () funksiyasını yazın.
-
-Task-10
-Telefon nömrəsini parametr kimi qəbul edən ısvalidnumber() funksiyasını yazın. 
-Telefon nömrəsi 11 rəqəmdən ibarət olduqda və +7 ilə başladıqda, funksiya true qaytarır.
-+71234567890
 
 Task-11
 Mətni parametr kimi qəbul edən və bu mətndəki herflerin sayını qaytaran numCounter funksiyasını yazın.
