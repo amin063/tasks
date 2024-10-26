@@ -24,8 +24,8 @@ function renderTable() {
             <td>${item.contactName}</td>
             <td>${item.contactTitle}</td>
             <th>
-              <button onclick="deleteData(${item.id})">DELETE</button>
-              <button onclick="showUpdateModal(${item.id})">UPDATE</button>
+              <button class="btn btn-danger"onclick="deleteData(${item.id})">DELETE</button>
+              <button class="btn btn-success" onclick="showUpdateModal(${item.id})">UPDATE</button>
             </th>
           </tr>`;
       });
