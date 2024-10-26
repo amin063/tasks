@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="showAddModal()">Add</button>
+    <div class="add-modal">
+      <form class="add-modal-content">
+        <input id="addCompanyName" type="text" placeholder="Company Name" />
+        <input id="addContactName" type="text" placeholder="Contact Name" />
+        <input id="addContactTitle" type="text" placeholder="Contact Title" />
+        <input type="submit" value="add" />
+      </form>
+    </div>
+    <div class="modal">
+      <form class="modal-content">
+        <input id="updateCompanyName" type="text" placeholder="Company Name" />
+        <input id="updateContactName" type="text" placeholder="Contact Name" />
+        <input id="updateContactTitle" type="text" placeholder="Contact Title" />
+        <input type="submit" value="update" />
+      </form>
+    </div>
+    <div class="container" style="width: 100%">
+      <table style="width: 100%">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>COMPANY NAME</th>
+            <th>CONTACT NAME</th>
+            <th>CONTACT TITLE</th>
+            <th>ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
